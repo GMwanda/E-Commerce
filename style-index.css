@@ -1,0 +1,36 @@
+:root {
+    --header-height: 3.5rem;
+
+
+    --first-color: ;
+    --first-color-alt: ;
+    --first-gradient: ;
+    --second-gradient: ;
+    --third-gradient: ;
+    --title-color: ;
+    --text-color: ;
+    --white-color: ;
+    --body-color: ;
+    --container-color: ;
+
+    /* FONT */
+    --body-font: ;
+    --second-font: ;
+    --bigger-font-size: 2.25rem;
+    --big-font-size: 1.55rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1.1rem;
+    --normal-font-size: .980rem;
+    --small-font-size: .850rem;
+    --smaller-font-size: .85rem;
+
+    /* FONT WEIGHT */
+    --font-regular: 400;
+    --font-weight: 500;
+    --font-semi-bold: 600;
+
+    /* Z-INDEX */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
