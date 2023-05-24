@@ -13,7 +13,7 @@
     --text-color: hsl(var(--hue), 4%, 35%);
     --text-color-light: hsl(var(--hue), 4%, 55%);
     --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: rgb(208, 221, 232);
+    --container-color: aliceblue;
 
     /* ======================   FONT    ====================== */
     --body-font: 'Rubik', sans-serif;
@@ -31,7 +31,7 @@
 
     /* ======================   MARGINS    ====================== */
     --mb-0-5: .5rem;
-    --mb-0-75: 75rem;
+    --mb-0-75: .75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
@@ -231,6 +231,11 @@ img {
     right: 0;
 }
 
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+    box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, .1);
+}
+
 /* ======================   HOME    ====================== */
 .home {
     padding: 3.5rem 0 2rem;
@@ -328,16 +333,163 @@ img {
     column-gap: .5rem;
 }
 
+.button-link {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
 
+.button-link:hover .button-icon {
+    transform: translateX(.25rem);
+}
 
 /* ======================   ABOUT    ====================== */
+.about-container {
+    row-gap: 2rem;
+}
+
+.about-img {
+    width: 280px;
+    justify-self: center;
+}
+
+.about-title {
+    margin-bottom: var(--mb-1);
+}
+
+.about-description {
+    margin-bottom: var(--mb-2);
+}
+
+.about-details {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-details-description {
+    display: inline-flex;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+}
+
+.about-details-icon {
+    font-size: 1rem;
+    color: var(--first-color);
+    margin-top: .15rem;
+}
 
 /* ======================   STEPS    ====================== */
+.steps-bg {
+    background-color: var(--first-color);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.steps-container {
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.steps-title {
+    color: aliceblue;
+}
+
+.steps-card {
+    background-color: var(--container-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.steps-card-number {
+    display: inline-block;
+    background-color: var(--first-color-alt);
+    color: aliceblue;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+    transition: .3s;
+}
+
+.steps-card-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.steps-card-description {
+    font-size: var(--small-font-size);
+}
+
+.steps-card:hover .steps-card-number {
+    transform: translateY(-.5rem);
+}
 
 /* ======================   PRODUCTS    ====================== */
+.product-description {
+    text-align: center;
+}
 
-/* ======================   HOME    ====================== */
+.product-container {
+    padding: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 3rem;
+}
 
-/* ======================   HOME    ====================== */
+.product-card {
+    display: grid;
+    position: relative;
+}
+
+.product-img {
+    position: relative;
+    width: 120px;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+    transition: .3s;
+}
+
+.product-title,
+.product-price {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.product-title {
+    margin-bottom: .25rem;
+}
+
+.product-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    color: aliceblue;
+    padding: 0.25rem;
+    border-radius: .35rem;
+    font-size: 1.15rem;
+}
+
+.product-button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.product-circle {
+    width: 90px;
+    height: 90px;
+    background-color: var(--first-color-lighten);
+    border-radius: 30%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.product-card:hover .product-img {
+    transform: translateY(-.5rem);
+}
+
+/* ======================   QUESTIONS    ====================== */
+
+/* ======================   CONTACT     ====================== */
 
 /* ======================   HOME    ====================== */
