@@ -35,8 +35,35 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-// ===================== SHOW MENU
+// ===================== OPENS & CLOSES QUESTIONS 
+const accordItems = document.querySelectorAll('.questions-item')
 
+accordItems.forEach((item) => {
+    const accordHeader = item.querySelector('.questions-header')
+
+    accordHeader.addEventListener('click', () => {
+        const openItem = document.querySelector('.accord-open')
+
+        toggleItem(item)
+
+        if (openItem && openItem !== item) {
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item) => {
+    const accordContent = item.querySelector('.questions-content')
+
+    if (item.classList.contains('accord-open')) {
+        accordContent.removeAttribute('style')
+        item.classList.remove('accord-open')
+    } else {
+        accordContent.style.height = accordContent.scrollHeight + 'px'
+        item.classList.add('accord-open')
+    }
+
+}
 
 
 // ===================== SHOW MENU
